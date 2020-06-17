@@ -4,8 +4,12 @@ Returns: an integer
 '''
 def single_number(arr):
     # Your code here
-
-    pass
+    repeated = set()
+    while True:
+        num = arr.pop()
+        if num not in arr and num not in repeated:
+            return num
+        repeated.add(num)
 
 
 if __name__ == '__main__':
