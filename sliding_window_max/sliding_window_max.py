@@ -15,6 +15,7 @@ def sliding_window_max(nums, k):
     if k >= len(nums):
         return max(nums)
 
+    # add the initialize the window_max value and the all_max list
     window_max = max(nums[:k])
     all_max = [window_max]
 
